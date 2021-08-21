@@ -1,0 +1,112 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "cypress/globals": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:jest/recommended",
+    "prettier",
+    "eslint:recommended",
+    "plugin:import/typescript",
+    "plugin:cypress/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "import",
+    "jest",
+    "prettier",
+    "cypress"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "singleQuote": true,
+        "trailingComma": "all",
+
+        "semi": true,
+        "endOfLine": "auto",
+        "arrowParens": "always",
+        "bracketSpacing": true
+      },
+      {
+        "usePrettierrc": false
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "react/prop-types": "off",
+    "no-unused-expressions": "off",
+    "import/extensions": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "jsx-a11y/media-has-caption": "off",
+    "import/no-unresolved": 0,
+    "no-console": "warn",
+    "no-var": "error",
+    "no-unused-vars": "off",
+    "jsx-a11y/mouse-events-have-key-events": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/no-onchange": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-tabindex": "off",
+    "jsx-a11y/tabindex-no-positive": "off",
+    "jsx-a11y/anchor-is-valid": 0,
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "eslint-disable-next-line": 0,
+    "comma-dangle": "off",
+    "require-yield": "off",
+    "jest/expect-expect": "off"
+  },
+  "settings": { "import/resolver": { "typescript": {} } },
+  "globals": {
+    "React": true,
+    "google": true,
+    "mount": true,
+    "mountWithRouter": true,
+    "shallow": true,
+    "shallowWithRouter": true,
+    "context": true,
+    "expect": true,
+    "jsdom": true,
+    "JSX": true,
+    "jest/globals": true,
+    "cypress/globals": true
+  },
+  "overrides": [
+    {
+      "files": ["**/*.spec.js", "**/*.spec.jsx"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}

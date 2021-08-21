@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@core/*": ["./src/core/*"],
+      "@data/*": ["./src/data/*"],
+      "@infra/*": ["./src/infra/*"],
+      "@main/*": ["./src/main/*"],
+      "@resources/*": ["./src/resources/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@validation/*": ["./src/validation/*"],
+      "@view/*": ["./src/view/*"]
+    }
+  }
+}

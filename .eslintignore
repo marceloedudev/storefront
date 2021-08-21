@@ -1,0 +1,9 @@
+node_modules
+.vscode
+coverage
+public
+dist
+jest.config.js
+config-overrides.js
+*.scss
+*.json
