@@ -3,7 +3,7 @@ export interface IDevices {
   videos: MediaDeviceInfo[];
 }
 
-export const loadMediaDevices = async (): Promise<IDevices> => {
+export const loadMediaDevices = async () => {
   try {
     const deviceInfos = await navigator.mediaDevices.enumerateDevices();
 

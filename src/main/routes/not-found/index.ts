@@ -7,6 +7,6 @@ export default [
   {
     component: NotFound,
     path: '*',
-    exact: true,
+    isPrivate: true,
   },
 ] as RouteProps[];

@@ -19,7 +19,7 @@ export class AxiosHttpClient implements HttpClient {
         statusCode: response.status,
         body: response.data,
       });
-    } catch (error) {
+    } catch (error: any) {
       response = error.response;
 
       const statusCode = response.status || 500;

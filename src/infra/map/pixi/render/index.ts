@@ -80,7 +80,8 @@ export class PixiRender extends PixiUtils {
       this.markers = [];
 
       const doubleBuffering =
-        /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        /iPad|iPhone|iPod/.test(navigator.userAgent) &&
+        !(window as any).MSStream;
 
       this.pixiLayer = L.pixiOverlay(
         (utils, event) => {

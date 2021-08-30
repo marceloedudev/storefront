@@ -1,0 +1,9 @@
+component: website
+name: sls-storefront
+stage: dev
+
+inputs:
+  src:
+    src: ./
+    hook: npm run build
+    dist: ./build

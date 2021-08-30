@@ -46,7 +46,7 @@ const useFormSignIn = ({ fieldValidators, tokensService }: IUseFormSignIn) => {
         setRefreshToken(refresh_token);
 
         window.location.reload();
-      } catch (err) {
+      } catch (err: any) {
         ToastError({ message: err.body.message });
         actions.setLoading(false);
       }
